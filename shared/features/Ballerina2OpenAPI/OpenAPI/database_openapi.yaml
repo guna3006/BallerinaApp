@@ -27,8 +27,8 @@ paths:
           content:
             application/json:
               schema:
-                type: object
-                properties: {}
+                type: array
+                items: {}
         "500":
           description: Internal server error
           content:
@@ -39,6 +39,11 @@ paths:
     post:
       summary: Description.
       operationId: postNewdata
+      requestBody:
+        content:
+          '*/*':
+            schema:
+              description: Any type of entity body
       responses:
         "201":
           description: Created
@@ -71,6 +76,24 @@ paths:
             application/json:
               schema:
                 $ref: '#/components/schemas/ErrorPayload'
+  /usernamelist:
+    get:
+      summary: Description.
+      operationId: getUsernamelist
+      responses:
+        "200":
+          description: Ok
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {}
+        "500":
+          description: Internal server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorPayload'
   /email:
     delete:
       summary: Description.
@@ -88,7 +111,8 @@ paths:
           content:
             application/json:
               schema:
-                type: object
+                type: array
+                items: {}
         "500":
           description: Internal server error
           content:

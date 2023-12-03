@@ -1,0 +1,1591 @@
+{
+	"info": {
+		"_postman_id": "4fe782df-08cd-4fe6-be0e-1feb6d95260c",
+		"name": "BallerinaApp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "27924249"
+	},
+	"item": [
+		{
+			"name": "PositiveCase",
+			"item": [
+				{
+					"name": "http://localhost:7777/geolocation/coordinate?lat=51.21710155&lon=6.778318997521949",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7777/geolocation/coordinate?lat=51.21710155&lon=6.778318997521949",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"geolocation",
+								"coordinate"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "51.21710155"
+								},
+								{
+									"key": "lon",
+									"value": "6.778318997521949"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:7777/geolocation/coordinate?lat=51.21710155&lon=6.778318997521949",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7777/geolocation/coordinate?lat=51.21710155&lon=6.778318997521949",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7777",
+									"path": [
+										"geolocation",
+										"coordinate"
+									],
+									"query": [
+										{
+											"key": "lat",
+											"value": "51.21710155"
+										},
+										{
+											"key": "lon",
+											"value": "6.778318997521949"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "server",
+									"value": "ballerina"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 2 Dec 2023 00:23:30 +0800"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "content-length",
+									"value": "707"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"results\": [\n        {\n            \"datasource\": {\n                \"sourcename\": \"openstreetmap\",\n                \"attribution\": \"© OpenStreetMap contributors\",\n                \"license\": \"Open Database License\",\n                \"url\": \"https://www.openstreetmap.org/copyright\"\n            },\n            \"name\": \"Parkhaus Kö Talstraße\",\n            \"country\": \"Germany\",\n            \"country_code\": \"de\",\n            \"state\": \"North Rhine-Westphalia\",\n            \"city\": \"Dusseldorf\",\n            \"postcode\": \"40217\",\n            \"district\": \"Stadtbezirk 3\",\n            \"suburb\": \"Friedrichstadt\",\n            \"street\": \"Talstraße\",\n            \"housenumber\": \"1\",\n            \"lon\": 6.778318997521949,\n            \"lat\": 51.21710155,\n            \"distance\": 0,\n            \"result_type\": \"amenity\",\n            \"formatted\": \"Parkhaus Kö Talstraße, Talstraße 1, 40217 Dusseldorf, Germany\",\n            \"address_line1\": \"Parkhaus Kö Talstraße\",\n            \"address_line2\": \"Talstraße 1, 40217 Dusseldorf, Germany\",\n            \"category\": \"parking.cars\",\n            \"timezone\": {\n                \"name\": \"Europe/Berlin\",\n                \"offset_STD\": \"+01:00\",\n                \"offset_STD_seconds\": 3600,\n                \"offset_DST\": \"+02:00\",\n                \"offset_DST_seconds\": 7200,\n                \"abbreviation_STD\": \"CET\",\n                \"abbreviation_DST\": \"CEST\"\n            },\n            \"plus_code\": \"9F386Q8H+R8\",\n            \"rank\": {\n                \"importance\": 0.00000999999999995449,\n                \"popularity\": 8.995467104553104\n            },\n            \"place_id\": \"515fd9c0a7ff1c1b40599994ccfbc99b4940f00102f9010877d00800000000c002019203175061726b68617573204bc3b62054616c73747261c39f65\",\n            \"bbox\": {\n                \"lon1\": 6.7778088,\n                \"lat1\": 51.2169076,\n                \"lon2\": 6.7786914,\n                \"lat2\": 51.2173398\n            }\n        }\n    ],\n    \"query\": {\n        \"lat\": 51.21710155,\n        \"lon\": 6.778318997521949,\n        \"plus_code\": \"9F386Q8H+R8\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:7777/geolocation/wildcardSearch?key=kulim",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7777/geolocation/wildcardSearch?key=kulim",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"geolocation",
+								"wildcardSearch"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "kulim"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:7777/geolocation/wildcardSearch?key=kulim",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7777/geolocation/wildcardSearch?key=kulim",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7777",
+									"path": [
+										"geolocation",
+										"wildcardSearch"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "kulim"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "server",
+									"value": "ballerina"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 2 Dec 2023 00:25:00 +0800"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "content-length",
+									"value": "1472"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"results\": [\n        {\n            \"datasource\": {\n                \"sourcename\": \"openstreetmap\",\n                \"attribution\": \"© OpenStreetMap contributors\",\n                \"license\": \"Open Database License\",\n                \"url\": \"https://www.openstreetmap.org/copyright\"\n            },\n            \"name\": \"Kulim\",\n            \"country\": \"Malaysia\",\n            \"country_code\": \"my\",\n            \"state\": \"Kedah\",\n            \"city\": \"Kulim\",\n            \"postcode\": \"09000\",\n            \"district\": \"Kulim\",\n            \"lon\": 100.5525705,\n            \"lat\": 5.3663769,\n            \"formatted\": \"Kulim, Kedah, Malaysia\",\n            \"address_line1\": \"Kulim\",\n            \"address_line2\": \"Kulim, Kedah, Malaysia\",\n            \"category\": \"populated_place\",\n            \"timezone\": {\n                \"name\": \"Asia/Kuala_Lumpur\",\n                \"name_alt\": \"Asia/Singapore\",\n                \"offset_STD\": \"+08:00\",\n                \"offset_STD_seconds\": 28800,\n                \"offset_DST\": \"+08:00\",\n                \"offset_DST_seconds\": 28800\n            },\n            \"plus_code\": \"6PQ29H83+H2\",\n            \"plus_code_short\": \"83+H2 Kulim, Kedah, Malaysia\",\n            \"result_type\": \"district\",\n            \"rank\": {\n                \"importance\": 0.5888683861101411,\n                \"popularity\": 1.2062454469551849,\n                \"confidence\": 1,\n                \"confidence_city_level\": 1,\n                \"match_type\": \"full_match\"\n            },\n            \"place_id\": \"51008fa8505d23594059190a8e812b771540f00103f901ba39ab2600000000c002069203054b756c696d\",\n            \"bbox\": {\n                \"lon1\": 100.3925705,\n                \"lat1\": 5.2063769,\n                \"lon2\": 100.7125705,\n                \"lat2\": 5.5263769\n            }\n        },\n        {\n            \"datasource\": {\n                \"sourcename\": \"openstreetmap\",\n                \"attribution\": \"© OpenStreetMap contributors\",\n                \"license\": \"Open Database License\",\n                \"url\": \"https://www.openstreetmap.org/copyright\"\n            },\n            \"name\": \"Kulim\",\n            \"country\": \"Indonesia\",\n            \"country_code\": \"id\",\n            \"region\": \"Sumatra\",\n            \"state\": \"Riau\",\n            \"county\": \"Kampar Regency\",\n            \"city\": \"Kulim\",\n            \"village\": \"Kulim\",\n            \"lon\": 101.5706665,\n            \"lat\": 0.441126,\n            \"formatted\": \"Kulim, Kampar Regency, Indonesia\",\n            \"address_line1\": \"Kulim\",\n            \"address_line2\": \"Kampar Regency, Indonesia\",\n            \"category\": \"populated_place\",\n            \"timezone\": {\n                \"name\": \"Asia/Jakarta\",\n                \"offset_STD\": \"+07:00\",\n                \"offset_STD_seconds\": 25200,\n                \"offset_DST\": \"+07:00\",\n                \"offset_DST_seconds\": 25200,\n                \"abbreviation_STD\": \"WIB\",\n                \"abbreviation_DST\": \"WIB\"\n            },\n            \"plus_code\": \"6PG3CHRC+F7\",\n            \"result_type\": \"city\",\n            \"rank\": {\n                \"importance\": 0.37500999999999995,\n                \"popularity\": 0.8867975611397146,\n                \"confidence\": 1,\n                \"confidence_city_level\": 1,\n                \"match_type\": \"full_match\"\n            },\n            \"place_id\": \"510f9bc8cc85645940593694da8b683bdc3ff00103f90158cbfa4d00000000c002089203054b756c696d\",\n            \"bbox\": {\n                \"lon1\": 101.5506665,\n                \"lat1\": 0.421126,\n                \"lon2\": 101.5906665,\n                \"lat2\": 0.461126\n            }\n        },\n        {\n            \"datasource\": {\n                \"sourcename\": \"openstreetmap\",\n                \"attribution\": \"© OpenStreetMap contributors\",\n                \"license\": \"Open Database License\",\n                \"url\": \"https://www.openstreetmap.org/copyright\"\n            },\n            \"name\": \"Kulim (Malaysia) Berhad Ladang REM\",\n            \"country\": \"Malaysia\",\n            \"country_code\": \"my\",\n            \"state\": \"Johor\",\n            \"city\": \"Kulim (Malaysia) Berhad Ladang REM\",\n            \"district\": \"Kota Tinggi\",\n            \"hamlet\": \"Kulim (Malaysia) Berhad Ladang REM\",\n            \"lon\": 103.8838239,\n            \"lat\": 1.7033396,\n            \"formatted\": \"Kota Tinggi, Kulim (Malaysia) Berhad Ladang REM, Johor, Malaysia\",\n            \"address_line1\": \"Kota Tinggi\",\n            \"address_line2\": \"Kulim (Malaysia) Berhad Ladang REM, Johor, Malaysia\",\n            \"category\": \"populated_place\",\n            \"timezone\": {\n                \"name\": \"Asia/Kuala_Lumpur\",\n                \"name_alt\": \"Asia/Singapore\",\n                \"offset_STD\": \"+08:00\",\n                \"offset_STD_seconds\": 28800,\n                \"offset_DST\": \"+08:00\",\n                \"offset_DST_seconds\": 28800\n            },\n            \"plus_code\": \"6PH5PV3M+8G\",\n            \"result_type\": \"suburb\",\n            \"rank\": {\n                \"importance\": 0.35000999999999993,\n                \"popularity\": 1.8858659875926385,\n                \"confidence\": 1,\n                \"confidence_city_level\": 1,\n                \"match_type\": \"full_match\"\n            },\n            \"place_id\": \"51157b1e9290f859405922b53f06e140fb3ff00103f90124747c7d02000000c002059203224b756c696d20284d616c61797369612920426572686164204c6164616e672052454d\",\n            \"bbox\": {\n                \"lon1\": 103.8638239,\n                \"lat1\": 1.6833396,\n                \"lon2\": 103.9038239,\n                \"lat2\": 1.7233396\n            }\n        },\n        {\n            \"datasource\": {\n                \"sourcename\": \"openstreetmap\",\n                \"attribution\": \"© OpenStreetMap contributors\",\n                \"license\": \"Open Database License\",\n                \"url\": \"https://www.openstreetmap.org/copyright\"\n            },\n            \"name\": \"Мошъюга\",\n            \"country\": \"Russia\",\n            \"country_code\": \"ru\",\n            \"region\": \"Northwestern Federal District\",\n            \"state\": \"Komi Republic\",\n            \"county\": \"Izhemsky District\",\n            \"city\": \"Мошъюга\",\n            \"municipality\": \"сельское поселение Мохча\",\n            \"village\": \"Мошъюга\",\n            \"lon\": 53.750358,\n            \"lat\": 64.8564597,\n            \"formatted\": \"Мошъюга, Izhemsky District, Russia\",\n            \"address_line1\": \"Мошъюга\",\n            \"address_line2\": \"Izhemsky District, Russia\",\n            \"category\": \"populated_place\",\n            \"timezone\": {\n                \"name\": \"Europe/Moscow\",\n                \"offset_STD\": \"+03:00\",\n                \"offset_STD_seconds\": 10800,\n                \"offset_DST\": \"+03:00\",\n                \"offset_DST_seconds\": 10800,\n                \"abbreviation_STD\": \"MSK\",\n                \"abbreviation_DST\": \"MSK\"\n            },\n            \"plus_code\": \"9HPMVQ42+H4\",\n            \"result_type\": \"city\",\n            \"rank\": {\n                \"importance\": 0.27501,\n                \"popularity\": 0.44868481920401015,\n                \"confidence\": 1,\n                \"confidence_city_level\": 1,\n                \"match_type\": \"full_match\"\n            },\n            \"place_id\": \"515f251fbb0be04a4059e375583cd0365040f00102f9013940db1900000000c0020892030ed09cd0bed188d18ad18ed0b3d0b0\",\n            \"bbox\": {\n                \"lon1\": 53.7350909,\n                \"lat1\": 64.8462284,\n                \"lon2\": 53.7639729,\n                \"lat2\": 64.8694758\n            }\n        }\n    ],\n    \"query\": {\n        \"text\": \"kulim\",\n        \"parsed\": {\n            \"city\": \"kulim\",\n            \"expected_type\": \"unknown\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:7777/paginated/wildcardSearch?key=kulim&pageNumber=1&pageSize=3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7777/paginated/wildcardSearch?key=kulim&pageNumber=1&pageSize=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"paginated",
+								"wildcardSearch"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "kulim"
+								},
+								{
+									"key": "pageNumber",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:7777/paginated/wildcardSearch?key=kulim&pageNumber=1&pageSize=3",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7777/paginated/wildcardSearch?key=kulim&pageNumber=1&pageSize=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7777",
+									"path": [
+										"paginated",
+										"wildcardSearch"
+									],
+									"query": [
+										{
+											"key": "key",
+											"value": "kulim"
+										},
+										{
+											"key": "pageNumber",
+											"value": "1"
+										},
+										{
+											"key": "pageSize",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "server",
+									"value": "ballerina"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 2 Dec 2023 00:44:04 +0800"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "content-length",
+									"value": "1129"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"results\": [\n        {\n            \"datasource\": {\n                \"sourcename\": \"openstreetmap\",\n                \"attribution\": \"© OpenStreetMap contributors\",\n                \"license\": \"Open Database License\",\n                \"url\": \"https://www.openstreetmap.org/copyright\"\n            },\n            \"name\": \"Kulim\",\n            \"country\": \"Malaysia\",\n            \"country_code\": \"my\",\n            \"state\": \"Kedah\",\n            \"city\": \"Kulim\",\n            \"postcode\": \"09000\",\n            \"district\": \"Kulim\",\n            \"lon\": 100.5525705,\n            \"lat\": 5.3663769,\n            \"formatted\": \"Kulim, Kedah, Malaysia\",\n            \"address_line1\": \"Kulim\",\n            \"address_line2\": \"Kulim, Kedah, Malaysia\",\n            \"category\": \"populated_place\",\n            \"timezone\": {\n                \"name\": \"Asia/Kuala_Lumpur\",\n                \"name_alt\": \"Asia/Singapore\",\n                \"offset_STD\": \"+08:00\",\n                \"offset_STD_seconds\": 28800,\n                \"offset_DST\": \"+08:00\",\n                \"offset_DST_seconds\": 28800\n            },\n            \"plus_code\": \"6PQ29H83+H2\",\n            \"plus_code_short\": \"83+H2 Kulim, Kedah, Malaysia\",\n            \"result_type\": \"district\",\n            \"rank\": {\n                \"importance\": 0.5888683861101411,\n                \"popularity\": 1.2062454469551849,\n                \"confidence\": 1,\n                \"confidence_city_level\": 1,\n                \"match_type\": \"full_match\"\n            },\n            \"place_id\": \"51008fa8505d23594059190a8e812b771540f00103f901ba39ab2600000000c002069203054b756c696d\",\n            \"bbox\": {\n                \"lon1\": 100.3925705,\n                \"lat1\": 5.2063769,\n                \"lon2\": 100.7125705,\n                \"lat2\": 5.5263769\n            }\n        },\n        {\n            \"datasource\": {\n                \"sourcename\": \"openstreetmap\",\n                \"attribution\": \"© OpenStreetMap contributors\",\n                \"license\": \"Open Database License\",\n                \"url\": \"https://www.openstreetmap.org/copyright\"\n            },\n            \"name\": \"Kulim\",\n            \"country\": \"Indonesia\",\n            \"country_code\": \"id\",\n            \"region\": \"Sumatra\",\n            \"state\": \"Riau\",\n            \"county\": \"Kampar Regency\",\n            \"city\": \"Kulim\",\n            \"village\": \"Kulim\",\n            \"lon\": 101.5706665,\n            \"lat\": 0.441126,\n            \"formatted\": \"Kulim, Kampar Regency, Indonesia\",\n            \"address_line1\": \"Kulim\",\n            \"address_line2\": \"Kampar Regency, Indonesia\",\n            \"category\": \"populated_place\",\n            \"timezone\": {\n                \"name\": \"Asia/Jakarta\",\n                \"offset_STD\": \"+07:00\",\n                \"offset_STD_seconds\": 25200,\n                \"offset_DST\": \"+07:00\",\n                \"offset_DST_seconds\": 25200,\n                \"abbreviation_STD\": \"WIB\",\n                \"abbreviation_DST\": \"WIB\"\n            },\n            \"plus_code\": \"6PG3CHRC+F7\",\n            \"result_type\": \"city\",\n            \"rank\": {\n                \"importance\": 0.37500999999999995,\n                \"popularity\": 0.8867975611397146,\n                \"confidence\": 1,\n                \"confidence_city_level\": 1,\n                \"match_type\": \"full_match\"\n            },\n            \"place_id\": \"510f9bc8cc85645940593694da8b683bdc3ff00103f90158cbfa4d00000000c002089203054b756c696d\",\n            \"bbox\": {\n                \"lon1\": 101.5506665,\n                \"lat1\": 0.421126,\n                \"lon2\": 101.5906665,\n                \"lat2\": 0.461126\n            }\n        },\n        {\n            \"datasource\": {\n                \"sourcename\": \"openstreetmap\",\n                \"attribution\": \"© OpenStreetMap contributors\",\n                \"license\": \"Open Database License\",\n                \"url\": \"https://www.openstreetmap.org/copyright\"\n            },\n            \"name\": \"Kulim (Malaysia) Berhad Ladang REM\",\n            \"country\": \"Malaysia\",\n            \"country_code\": \"my\",\n            \"state\": \"Johor\",\n            \"city\": \"Kulim (Malaysia) Berhad Ladang REM\",\n            \"district\": \"Kota Tinggi\",\n            \"hamlet\": \"Kulim (Malaysia) Berhad Ladang REM\",\n            \"lon\": 103.8838239,\n            \"lat\": 1.7033396,\n            \"formatted\": \"Kota Tinggi, Kulim (Malaysia) Berhad Ladang REM, Johor, Malaysia\",\n            \"address_line1\": \"Kota Tinggi\",\n            \"address_line2\": \"Kulim (Malaysia) Berhad Ladang REM, Johor, Malaysia\",\n            \"category\": \"populated_place\",\n            \"timezone\": {\n                \"name\": \"Asia/Kuala_Lumpur\",\n                \"name_alt\": \"Asia/Singapore\",\n                \"offset_STD\": \"+08:00\",\n                \"offset_STD_seconds\": 28800,\n                \"offset_DST\": \"+08:00\",\n                \"offset_DST_seconds\": 28800\n            },\n            \"plus_code\": \"6PH5PV3M+8G\",\n            \"result_type\": \"suburb\",\n            \"rank\": {\n                \"importance\": 0.35000999999999993,\n                \"popularity\": 1.8858659875926385,\n                \"confidence\": 1,\n                \"confidence_city_level\": 1,\n                \"match_type\": \"full_match\"\n            },\n            \"place_id\": \"51157b1e9290f859405922b53f06e140fb3ff00103f90124747c7d02000000c002059203224b756c696d20284d616c61797369612920426572686164204c6164616e672052454d\",\n            \"bbox\": {\n                \"lon1\": 103.8638239,\n                \"lat1\": 1.6833396,\n                \"lon2\": 103.9038239,\n                \"lat2\": 1.7233396\n            }\n        }\n    ],\n    \"query\": {\n        \"text\": \"kulim\",\n        \"parsed\": {\n            \"city\": \"kulim\",\n            \"expected_type\": \"unknown\"\n        }\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:7777/paginated/coordinate?lat=51.21710155&lon=6.778318997521949&pageNumber=1&pageSize=3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7777/paginated/coordinate?lat=51.21710155&lon=6.778318997521949&pageNumber=1&pageSize=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"paginated",
+								"coordinate"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "51.21710155"
+								},
+								{
+									"key": "lon",
+									"value": "6.778318997521949"
+								},
+								{
+									"key": "pageNumber",
+									"value": "1"
+								},
+								{
+									"key": "pageSize",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:7777/paginated/coordinate?lat=51.21710155&lon=6.778318997521949&pageNumber=1&pageSize=3",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7777/paginated/coordinate?lat=51.21710155&lon=6.778318997521949&pageNumber=1&pageSize=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7777",
+									"path": [
+										"paginated",
+										"coordinate"
+									],
+									"query": [
+										{
+											"key": "lat",
+											"value": "51.21710155"
+										},
+										{
+											"key": "lon",
+											"value": "6.778318997521949"
+										},
+										{
+											"key": "pageNumber",
+											"value": "1"
+										},
+										{
+											"key": "pageSize",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "server",
+									"value": "ballerina"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 2 Dec 2023 00:51:15 +0800"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "content-length",
+									"value": "707"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"results\": [\n        {\n            \"datasource\": {\n                \"sourcename\": \"openstreetmap\",\n                \"attribution\": \"© OpenStreetMap contributors\",\n                \"license\": \"Open Database License\",\n                \"url\": \"https://www.openstreetmap.org/copyright\"\n            },\n            \"name\": \"Parkhaus Kö Talstraße\",\n            \"country\": \"Germany\",\n            \"country_code\": \"de\",\n            \"state\": \"North Rhine-Westphalia\",\n            \"city\": \"Dusseldorf\",\n            \"postcode\": \"40217\",\n            \"district\": \"Stadtbezirk 3\",\n            \"suburb\": \"Friedrichstadt\",\n            \"street\": \"Talstraße\",\n            \"housenumber\": \"1\",\n            \"lon\": 6.778318997521949,\n            \"lat\": 51.21710155,\n            \"distance\": 0,\n            \"result_type\": \"amenity\",\n            \"formatted\": \"Parkhaus Kö Talstraße, Talstraße 1, 40217 Dusseldorf, Germany\",\n            \"address_line1\": \"Parkhaus Kö Talstraße\",\n            \"address_line2\": \"Talstraße 1, 40217 Dusseldorf, Germany\",\n            \"category\": \"parking.cars\",\n            \"timezone\": {\n                \"name\": \"Europe/Berlin\",\n                \"offset_STD\": \"+01:00\",\n                \"offset_STD_seconds\": 3600,\n                \"offset_DST\": \"+02:00\",\n                \"offset_DST_seconds\": 7200,\n                \"abbreviation_STD\": \"CET\",\n                \"abbreviation_DST\": \"CEST\"\n            },\n            \"plus_code\": \"9F386Q8H+R8\",\n            \"rank\": {\n                \"importance\": 0.00000999999999995449,\n                \"popularity\": 8.995467104553104\n            },\n            \"place_id\": \"515fd9c0a7ff1c1b40599994ccfbc99b4940f00102f9010877d00800000000c002019203175061726b68617573204bc3b62054616c73747261c39f65\",\n            \"bbox\": {\n                \"lon1\": 6.7778088,\n                \"lat1\": 51.2169076,\n                \"lon2\": 6.7786914,\n                \"lat2\": 51.2173398\n            }\n        }\n    ],\n    \"query\": {\n        \"lat\": 51.21710155,\n        \"lon\": 6.778318997521949,\n        \"plus_code\": \"9F386Q8H+R8\"\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:7777/find/email?username=guna",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7777/find/email?username=guna",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"find",
+								"email"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "guna"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:7777/find/email?username=guna",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7777/find/email?username=guna",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7777",
+									"path": [
+										"find",
+										"email"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "guna"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "server",
+									"value": "ballerina"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 2 Dec 2023 01:18:37 +0800"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "content-length",
+									"value": "87"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    {\n        \"email match\": true,\n        \"email address\": \"guna@me.com\",\n        \"email username\": \"guna\"\n    }\n]"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:7777/database/email/:username",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7777/database/email/:username",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"database",
+								"email",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "s003"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:7777/database/email/:username",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7777/database/email/:username",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7777",
+									"path": [
+										"database",
+										"email",
+										":username"
+									],
+									"variable": [
+										{
+											"key": "username",
+											"value": "s003"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "server",
+									"value": "ballerina"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 2 Dec 2023 02:00:47 +0800"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "content-length",
+									"value": "68"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"address\": \"guna@me.com\",\n    \"staffId\": \"S003\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:7777/database/newdata",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"address\": \"maga@me.com\",\n    \"staff_id\": \"S004\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7777/database/newdata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"database",
+								"newdata"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:7777/database/newdata",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"address\": \"nagu@me.com\",\n    \"staff_id\": \"S007\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:7777/database/newdata",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7777",
+									"path": [
+										"database",
+										"newdata"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "server",
+									"value": "ballerina"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 2 Dec 2023 02:14:23 +0800"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "content-length",
+									"value": "68"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"address\": \"maga@me.com\",\n    \"staffId\": \"S004\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:7777/database/emaillist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7777/database/emaillist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"database",
+								"emaillist"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:7777/database/emaillist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7777/database/emaillist",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7777",
+									"path": [
+										"database",
+										"emaillist"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "server",
+									"value": "ballerina"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 2 Dec 2023 02:23:44 +0800"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "content-length",
+									"value": "57"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"thiya@me.com,suha@me.com,guna@me.com,maga@me.com\"\n]"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:7777/database/email?staffid=s004",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7777/database/email?staffid=s004",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"database",
+								"email"
+							],
+							"query": [
+								{
+									"key": "staffid",
+									"value": "s004"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:7777/database/email?staffid=s004",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7777/database/email?staffid=s004",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7777",
+									"path": [
+										"database",
+										"email"
+									],
+									"query": [
+										{
+											"key": "staffid",
+											"value": "s004"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "server",
+									"value": "ballerina"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 2 Dec 2023 02:36:46 +0800"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "content-length",
+									"value": "61"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"Record s004 successfull deleted\"\n]"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:7777/database/usernamelist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7777/database/usernamelist",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"database",
+								"usernamelist"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:7777/database/usernamelist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7777/database/usernamelist",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7777",
+									"path": [
+										"database",
+										"usernamelist"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "server",
+									"value": "ballerina"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 2 Dec 2023 10:55:18 +0800"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "content-length",
+									"value": "52"
+								}
+							],
+							"cookie": [],
+							"body": "[\n    \"thiya\",\n    \"suha\",\n    \"guna\",\n    \"nagu\"\n]"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "NegativeCase",
+			"item": [
+				{
+					"name": "http://localhost:7777/geolocation/coordinate?lat=51.21710155&lon=6.778318997521949",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7777/geolocation/coordinate?lat=51.21710155&",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"geolocation",
+								"coordinate"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "51.21710155"
+								},
+								{
+									"key": "",
+									"value": null
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:7777/geolocation/coordinate?lat=51.21710155&lon=6.778318997521949",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7777/geolocation/coordinate?lat=51.21710155&",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7777",
+									"path": [
+										"geolocation",
+										"coordinate"
+									],
+									"query": [
+										{
+											"key": "lat",
+											"value": "51.21710155"
+										},
+										{
+											"key": "",
+											"value": null
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "server",
+									"value": "ballerina"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 2 Dec 2023 11:01:28 +0800"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "content-length",
+									"value": "189"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2023-12-02T03:01:28.325311Z\",\n    \"status\": 400,\n    \"reason\": \"Bad Request\",\n    \"message\": \"no query param value found for 'lon'\",\n    \"path\": \"/geolocation/coordinate?lat=51.21710155&\",\n    \"method\": \"GET\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:7777/geolocation/wildcardSearch?mey=kulim",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7777/geolocation/wildcardSearch?mey=kulim",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"geolocation",
+								"wildcardSearch"
+							],
+							"query": [
+								{
+									"key": "mey",
+									"value": "kulim"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:7777/geolocation/wildcardSearch?key=kulim",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7777/geolocation/wildcardSearch?mey=kulim",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7777",
+									"path": [
+										"geolocation",
+										"wildcardSearch"
+									],
+									"query": [
+										{
+											"key": "mey",
+											"value": "kulim"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "server",
+									"value": "ballerina"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 2 Dec 2023 11:02:15 +0800"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "content-length",
+									"value": "189"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2023-12-02T03:02:15.789924Z\",\n    \"status\": 400,\n    \"reason\": \"Bad Request\",\n    \"message\": \"no query param value found for 'key'\",\n    \"path\": \"/geolocation/wildcardSearch?mey=kulim\",\n    \"method\": \"GET\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:7777/paginated/wildcardSearch?key=kulim&pageNumber=1&pageSize=3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7777/paginated/wildcardSearch?key=kulim&pageNumber=1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"paginated",
+								"wildcardSearch"
+							],
+							"query": [
+								{
+									"key": "key",
+									"value": "kulim"
+								},
+								{
+									"key": "pageNumber",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "http://localhost:7777/paginated/coordinate?lat=51.21710155&lon=6.778318997521949&pageNumber=1&pageSize=3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7777/paginated/coordinate?lat=51.21710155&lon=6.778318997521949&pageSize=3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"paginated",
+								"coordinate"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "51.21710155"
+								},
+								{
+									"key": "lon",
+									"value": "6.778318997521949"
+								},
+								{
+									"key": "pageSize",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:7777/paginated/coordinate?lat=51.21710155&lon=6.778318997521949&pageNumber=1&pageSize=3",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7777/paginated/coordinate?lat=51.21710155&lon=6.778318997521949&pageSize=3",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7777",
+									"path": [
+										"paginated",
+										"coordinate"
+									],
+									"query": [
+										{
+											"key": "lat",
+											"value": "51.21710155"
+										},
+										{
+											"key": "lon",
+											"value": "6.778318997521949"
+										},
+										{
+											"key": "pageSize",
+											"value": "3"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "server",
+									"value": "ballerina"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 2 Dec 2023 11:04:48 +0800"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "content-length",
+									"value": "216"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2023-12-02T03:04:48.580592Z\",\n    \"status\": 400,\n    \"reason\": \"Bad Request\",\n    \"message\": \"no query param value found for 'pageNumber'\",\n    \"path\": \"/paginated/coordinate?lat=51.21710155&lon=6.778318997521949&pageSize=3\",\n    \"method\": \"GET\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:7777/find/email?username=kumar",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7777/find/email?username=kumar",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"find",
+								"email"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "kumar"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:7777/find/email?username=guna",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7777/find/email?username=kumar",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7777",
+									"path": [
+										"find",
+										"email"
+									],
+									"query": [
+										{
+											"key": "username",
+											"value": "kumar"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "server",
+									"value": "ballerina"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 2 Dec 2023 10:39:42 +0800"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "content-length",
+									"value": "180"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2023-12-02T02:39:42.634737Z\",\n    \"status\": 500,\n    \"reason\": \"Internal Server Error\",\n    \"message\": \"Query did not retrieve any rows.\",\n    \"path\": \"/find/email?username=kumar\",\n    \"method\": \"GET\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:7777/database/email/:username",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7777/database/email/:username",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"database",
+								"email",
+								":username"
+							],
+							"variable": [
+								{
+									"key": "username",
+									"value": "x001"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:7777/database/email/:username",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7777/database/email/:username",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7777",
+									"path": [
+										"database",
+										"email",
+										":username"
+									],
+									"variable": [
+										{
+											"key": "username",
+											"value": "x001"
+										}
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "server",
+									"value": "ballerina"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 2 Dec 2023 10:45:30 +0800"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "content-length",
+									"value": "162"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2023-12-02T02:45:30.591969Z\",\n    \"status\": 500,\n    \"reason\": \"Internal Server Error\",\n    \"message\": \"Retreive failed\",\n    \"path\": \"/database/email/x001\",\n    \"method\": \"GET\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:7777/database/newdata",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"address\": \"nagu@me.com\",\n    \"staffid\": \"S007\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:7777/database/newdata",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"database",
+								"newdata"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:7777/database/newdata",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\n    \"address\": \"nagu@me.com\",\n    \"staffid\": \"S007\"\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "http://localhost:7777/database/newdata",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7777",
+									"path": [
+										"database",
+										"newdata"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "text/plain"
+								},
+								{
+									"key": "server",
+									"value": "ballerina"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 2 Dec 2023 10:48:40 +0800"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "content-length",
+									"value": "52"
+								}
+							],
+							"cookie": [],
+							"body": "cannot find key 'staff_id'"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:7777/database/emaillist",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7777/database/emaillists",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"database",
+								"emaillists"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:7777/database/emaillist",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7777/database/emaillists",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7777",
+									"path": [
+										"database",
+										"emaillists"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "server",
+									"value": "ballerina"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 2 Dec 2023 11:00:43 +0800"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "content-length",
+									"value": "166"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2023-12-02T03:00:43.642619Z\",\n    \"status\": 404,\n    \"reason\": \"Not Found\",\n    \"message\": \"no matching resource found for path\",\n    \"path\": \"/database/emaillists\",\n    \"method\": \"GET\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:7777/database/email?staff_id=s004",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7777/database/email?staff_id=s004",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"database",
+								"email"
+							],
+							"query": [
+								{
+									"key": "staff_id",
+									"value": "s004"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:7777/database/email?staff_id=s004",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7777/database/email?staff_id=s004",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7777",
+									"path": [
+										"database",
+										"email"
+									],
+									"query": [
+										{
+											"key": "staff_id",
+											"value": "s004"
+										}
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "server",
+									"value": "ballerina"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 2 Dec 2023 10:59:17 +0800"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "content-length",
+									"value": "185"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2023-12-02T02:59:17.129671Z\",\n    \"status\": 400,\n    \"reason\": \"Bad Request\",\n    \"message\": \"no query param value found for 'staffid'\",\n    \"path\": \"/database/email?staff_id=s004\",\n    \"method\": \"DELETE\"\n}"
+						}
+					]
+				},
+				{
+					"name": "http://localhost:7777/database/usernamelists",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:7777/database/usernamelists",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "7777",
+							"path": [
+								"database",
+								"usernamelists"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "http://localhost:7777/database/usernamelists",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "http://localhost:7777/database/usernamelists",
+									"protocol": "http",
+									"host": [
+										"localhost"
+									],
+									"port": "7777",
+									"path": [
+										"database",
+										"usernamelists"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "content-type",
+									"value": "application/json"
+								},
+								{
+									"key": "server",
+									"value": "ballerina"
+								},
+								{
+									"key": "date",
+									"value": "Sat, 2 Dec 2023 10:55:53 +0800"
+								},
+								{
+									"key": "content-encoding",
+									"value": "gzip"
+								},
+								{
+									"key": "content-length",
+									"value": "167"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"timestamp\": \"2023-12-02T02:55:53.009501Z\",\n    \"status\": 404,\n    \"reason\": \"Not Found\",\n    \"message\": \"no matching resource found for path\",\n    \"path\": \"/database/usernamelists\",\n    \"method\": \"GET\"\n}"
+						}
+					]
+				}
+			]
+		}
+	]
+}

@@ -1,0 +1,521 @@
+openapi: 3.0.0
+info:
+  title: BallerinaApp
+  version: 1.0.0
+servers:
+  - url: http://localhost:7777
+tags:
+  - name: PositiveCase
+  - name: NegativeCase
+paths:
+  /geolocation/coordinate:
+    get:
+      tags:
+        - NegativeCase
+      summary: >-
+        http://localhost:7777/geolocation/coordinate?lat=51.21710155&lon=6.778318997521949
+      parameters:
+        - name: lat
+          in: query
+          schema:
+            type: number
+          example: '51.21710155'
+        - name: ''
+          in: query
+          schema:
+            type: string
+      responses:
+        '400':
+          description: Bad Request
+          headers:
+            content-type:
+              schema:
+                type: string
+                example: application/json
+            server:
+              schema:
+                type: string
+                example: ballerina
+            date:
+              schema:
+                type: string
+                example: Sat, 2 Dec 2023 11:01:28 +0800
+            content-encoding:
+              schema:
+                type: string
+                example: gzip
+            content-length:
+              schema:
+                type: integer
+                example: '189'
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                timestamp: '2023-12-02T03:01:28.325311Z'
+                status: 400
+                reason: Bad Request
+                message: no query param value found for 'lon'
+                path: /geolocation/coordinate?lat=51.21710155&
+                method: GET
+  /geolocation/wildcardSearch:
+    get:
+      tags:
+        - NegativeCase
+      summary: http://localhost:7777/geolocation/wildcardSearch?mey=kulim
+      parameters:
+        - name: mey
+          in: query
+          schema:
+            type: string
+          example: kulim
+      responses:
+        '400':
+          description: Bad Request
+          headers:
+            content-type:
+              schema:
+                type: string
+                example: application/json
+            server:
+              schema:
+                type: string
+                example: ballerina
+            date:
+              schema:
+                type: string
+                example: Sat, 2 Dec 2023 11:02:15 +0800
+            content-encoding:
+              schema:
+                type: string
+                example: gzip
+            content-length:
+              schema:
+                type: integer
+                example: '189'
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                timestamp: '2023-12-02T03:02:15.789924Z'
+                status: 400
+                reason: Bad Request
+                message: no query param value found for 'key'
+                path: /geolocation/wildcardSearch?mey=kulim
+                method: GET
+  /paginated/wildcardSearch:
+    get:
+      tags:
+        - NegativeCase
+      summary: >-
+        http://localhost:7777/paginated/wildcardSearch?key=kulim&pageNumber=1&pageSize=3
+      parameters:
+        - name: key
+          in: query
+          schema:
+            type: string
+          example: kulim
+        - name: pageNumber
+          in: query
+          schema:
+            type: integer
+          example: '1'
+      responses:
+        '200':
+          description: Successful response
+          content:
+            application/json: {}
+  /paginated/coordinate:
+    get:
+      tags:
+        - NegativeCase
+      summary: >-
+        http://localhost:7777/paginated/coordinate?lat=51.21710155&lon=6.778318997521949&pageNumber=1&pageSize=3
+      parameters:
+        - name: lat
+          in: query
+          schema:
+            type: number
+          example: '51.21710155'
+        - name: lon
+          in: query
+          schema:
+            type: number
+          example: '6.778318997521949'
+        - name: pageSize
+          in: query
+          schema:
+            type: integer
+          example: '3'
+      responses:
+        '400':
+          description: Bad Request
+          headers:
+            content-type:
+              schema:
+                type: string
+                example: application/json
+            server:
+              schema:
+                type: string
+                example: ballerina
+            date:
+              schema:
+                type: string
+                example: Sat, 2 Dec 2023 11:04:48 +0800
+            content-encoding:
+              schema:
+                type: string
+                example: gzip
+            content-length:
+              schema:
+                type: integer
+                example: '216'
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                timestamp: '2023-12-02T03:04:48.580592Z'
+                status: 400
+                reason: Bad Request
+                message: no query param value found for 'pageNumber'
+                path: >-
+                  /paginated/coordinate?lat=51.21710155&lon=6.778318997521949&pageSize=3
+                method: GET
+  /find/email:
+    get:
+      tags:
+        - NegativeCase
+      summary: http://localhost:7777/find/email?username=kumar
+      parameters:
+        - name: username
+          in: query
+          schema:
+            type: string
+          example: kumar
+      responses:
+        '500':
+          description: Internal Server Error
+          headers:
+            content-type:
+              schema:
+                type: string
+                example: application/json
+            server:
+              schema:
+                type: string
+                example: ballerina
+            date:
+              schema:
+                type: string
+                example: Sat, 2 Dec 2023 10:39:42 +0800
+            content-encoding:
+              schema:
+                type: string
+                example: gzip
+            content-length:
+              schema:
+                type: integer
+                example: '180'
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                timestamp: '2023-12-02T02:39:42.634737Z'
+                status: 500
+                reason: Internal Server Error
+                message: Query did not retrieve any rows.
+                path: /find/email?username=kumar
+                method: GET
+  /database/email/{username}:
+    get:
+      tags:
+        - NegativeCase
+      summary: http://localhost:7777/database/email/:username
+      parameters:
+        - name: username
+          in: path
+          schema:
+            type: string
+          required: true
+          example: x001
+      responses:
+        '500':
+          description: Internal Server Error
+          headers:
+            content-type:
+              schema:
+                type: string
+                example: application/json
+            server:
+              schema:
+                type: string
+                example: ballerina
+            date:
+              schema:
+                type: string
+                example: Sat, 2 Dec 2023 10:45:30 +0800
+            content-encoding:
+              schema:
+                type: string
+                example: gzip
+            content-length:
+              schema:
+                type: integer
+                example: '162'
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                timestamp: '2023-12-02T02:45:30.591969Z'
+                status: 500
+                reason: Internal Server Error
+                message: Retreive failed
+                path: /database/email/x001
+                method: GET
+  /database/newdata:
+    post:
+      tags:
+        - NegativeCase
+      summary: http://localhost:7777/database/newdata
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: object
+              example:
+                address: nagu@me.com
+                staffid: S007
+      responses:
+        '500':
+          description: Internal Server Error
+          headers:
+            content-type:
+              schema:
+                type: string
+                example: text/plain
+            server:
+              schema:
+                type: string
+                example: ballerina
+            date:
+              schema:
+                type: string
+                example: Sat, 2 Dec 2023 10:48:40 +0800
+            content-encoding:
+              schema:
+                type: string
+                example: gzip
+            content-length:
+              schema:
+                type: integer
+                example: '52'
+          content:
+            text/plain:
+              schema:
+                type: string
+              example: cannot find key 'staff_id'
+  /database/emaillist:
+    get:
+      tags:
+        - PositiveCase
+      summary: http://localhost:7777/database/emaillist
+      responses:
+        '200':
+          description: OK
+          headers:
+            content-type:
+              schema:
+                type: string
+                example: application/json
+            server:
+              schema:
+                type: string
+                example: ballerina
+            date:
+              schema:
+                type: string
+                example: Sat, 2 Dec 2023 02:23:44 +0800
+            content-encoding:
+              schema:
+                type: string
+                example: gzip
+            content-length:
+              schema:
+                type: integer
+                example: '57'
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                - thiya@me.com,suha@me.com,guna@me.com,maga@me.com
+  /database/email:
+    delete:
+      tags:
+        - NegativeCase
+      summary: http://localhost:7777/database/email?staff_id=s004
+      parameters:
+        - name: staff_id
+          in: query
+          schema:
+            type: string
+          example: s004
+      responses:
+        '400':
+          description: Bad Request
+          headers:
+            content-type:
+              schema:
+                type: string
+                example: application/json
+            server:
+              schema:
+                type: string
+                example: ballerina
+            date:
+              schema:
+                type: string
+                example: Sat, 2 Dec 2023 10:59:17 +0800
+            content-encoding:
+              schema:
+                type: string
+                example: gzip
+            content-length:
+              schema:
+                type: integer
+                example: '185'
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                timestamp: '2023-12-02T02:59:17.129671Z'
+                status: 400
+                reason: Bad Request
+                message: no query param value found for 'staffid'
+                path: /database/email?staff_id=s004
+                method: DELETE
+  /database/usernamelist:
+    get:
+      tags:
+        - PositiveCase
+      summary: http://localhost:7777/database/usernamelist
+      responses:
+        '200':
+          description: OK
+          headers:
+            content-type:
+              schema:
+                type: string
+                example: application/json
+            server:
+              schema:
+                type: string
+                example: ballerina
+            date:
+              schema:
+                type: string
+                example: Sat, 2 Dec 2023 10:55:18 +0800
+            content-encoding:
+              schema:
+                type: string
+                example: gzip
+            content-length:
+              schema:
+                type: integer
+                example: '52'
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                - thiya
+                - suha
+                - guna
+                - nagu
+  /database/emaillists:
+    get:
+      tags:
+        - NegativeCase
+      summary: http://localhost:7777/database/emaillist
+      responses:
+        '404':
+          description: Not Found
+          headers:
+            content-type:
+              schema:
+                type: string
+                example: application/json
+            server:
+              schema:
+                type: string
+                example: ballerina
+            date:
+              schema:
+                type: string
+                example: Sat, 2 Dec 2023 11:00:43 +0800
+            content-encoding:
+              schema:
+                type: string
+                example: gzip
+            content-length:
+              schema:
+                type: integer
+                example: '166'
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                timestamp: '2023-12-02T03:00:43.642619Z'
+                status: 404
+                reason: Not Found
+                message: no matching resource found for path
+                path: /database/emaillists
+                method: GET
+  /database/usernamelists:
+    get:
+      tags:
+        - NegativeCase
+      summary: http://localhost:7777/database/usernamelists
+      responses:
+        '404':
+          description: Not Found
+          headers:
+            content-type:
+              schema:
+                type: string
+                example: application/json
+            server:
+              schema:
+                type: string
+                example: ballerina
+            date:
+              schema:
+                type: string
+                example: Sat, 2 Dec 2023 10:55:53 +0800
+            content-encoding:
+              schema:
+                type: string
+                example: gzip
+            content-length:
+              schema:
+                type: integer
+                example: '167'
+          content:
+            application/json:
+              schema:
+                type: object
+              example:
+                timestamp: '2023-12-02T02:55:53.009501Z'
+                status: 404
+                reason: Not Found
+                message: no matching resource found for path
+                path: /database/usernamelists
+                method: GET
