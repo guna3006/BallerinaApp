@@ -15,15 +15,23 @@ The Docker platform adds an additional layer of flexibility and efficiency to th
 
 ### 1\. Prerequisites
 [![Static Badge](https://img.shields.io/badge/vscode-v1.84.2-blue?logo=visualstudiocode&logoColor=blue&labelColor=white&&color=grey)](https://code.visualstudio.com/download)
-<a></a>
+
+<p></p>
+
 [![Static Badge](https://img.shields.io/badge/Docker_Desktop-v4.25.2-blue?style=flat&logo=docker&logoColor=blue&label=Docker%20Dekstop&labelColor=white&color=grey)](https://www.docker.com/products/docker-desktop/)
-<a></a>
-####&emsp;Docker Images
-<a></a>
+<p></p>
+
+#### &emsp;Docker Images
+<p></p>
+
 &emsp;&emsp;[![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/_/mysql/latest?logo=docker&logoColor=white&label=MySQL&labelColor=blue&color=grey)](https://hub.docker.com/_/mysql)
-<a></a>
+
+<p></p>
+
 &emsp;&emsp;[![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/wso2/wso2am/latest?logo=docker&label=WSO2am&logoColor=white&labelColor=blue&color=grey)](https://hub.docker.com/r/wso2/wso2am)
-<a></a>
+
+<p></p>
+
 &emsp;&emsp;[![Docker Image Version (tag latest semver)](https://img.shields.io/docker/v/ballerina/ballerina/latest?logo=docker&label=Ballerina&logoColor=white&labelColor=blue&color=grey)](https://hub.docker.com/r/ballerina/ballerina)
 
 
@@ -35,13 +43,17 @@ The Docker platform adds an additional layer of flexibility and efficiency to th
 * Execute the file using terminal:
     ##### Unit Test
 &emsp; &emsp; ```sudo sh unittest.sh```
-<a></a>
+
+<p></p>
+
 &emsp; &emsp;[![Static Badge](https://img.shields.io/badge/unittest.sh-white?logo=gnometerminal&logoColor=black)](unittest.sh)
 
 * Execute the file using terminal:
     ##### Runtime
 &emsp; &emsp;```sudo sh runtime.sh``` 
-<a></a>
+
+<p></p>
+
 &emsp; &emsp;[![Static Badge](https://img.shields.io/badge/runtime.sh-white?logo=gnometerminal&logoColor=black)](runtime.sh)
 
 -------------
@@ -118,7 +130,7 @@ The Docker platform adds an additional layer of flexibility and efficiency to th
 
 * Execute the file using terminal:
 ```sudo sh b2o.sh``` 
-<a></a>
+<p></p>
 [![Static Badge](https://img.shields.io/badge/b2o.sh-white?logo=gnometerminal&logoColor=black)](/shared/features/Ballerina2OpenAPI/b2o.sh)
 
 
@@ -128,12 +140,12 @@ The Docker platform adds an additional layer of flexibility and efficiency to th
 
 * Execute the file using terminal:
 ```sudo sh p2o.sh``` 
-<a></a>
-[![Static Badge](https://img.shields.io/badge/p2o.sh-white?logo=gnometerminal&logoColor=black)](/shared/features/Postman2OpenAPI/p2o.sh)
 
+    [![Static Badge](https://img.shields.io/badge/p2o.sh-white?logo=gnometerminal&logoColor=black)](/shared/features/Postman2OpenAPI/p2o.sh)
+    
      * Store Postman Collection in:
     [![Static Badge](https://img.shields.io/badge/BallerinaApp-.json-white?logo=postman&logoColor=white&label=BallerinaApp.postman_collection)](/shared/features/Postman2OpenAPI/json/BallerinaApp.postman_collection.json)
-
+    
     * Generated OpenAPI located:
     [![Static Badge](https://img.shields.io/badge/BallerinaApp-.yml-white?logo=yaml&logoColor=white&label=BallerinaApp-openAPI)](/shared/features/Postman2OpenAPI/BallerinaApp-openAPI.yml)
 
@@ -146,11 +158,11 @@ The Docker platform adds an additional layer of flexibility and efficiency to th
 * Example created based on :
 [![Static Badge](https://img.shields.io/badge/OpenAPI--Standard-white?logo=swagger&logoColor=green)](https://swagger.io/specification/)
 
-<a></a>
+<p></p>
 
 [![Static Badge](https://img.shields.io/badge/sampleOpenAPISchema-.yaml-white?logo=yaml&logoColor=white&label=sampleOpenAPISchema.openapi)](/shared/openAPI-Templates/sampleOpenAPISchema.openapi.yaml)
 
-<a></a>
+<p></p>
 
 [![Static Badge](https://img.shields.io/badge/sampleOpenAPISchema-.json-white?logo=json&logoColor=white&label=sampleOpenAPISchema.openapi)](/shared/openAPI-Templates/sampleOpenAPISchema.openapi.json)
 
