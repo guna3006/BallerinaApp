@@ -1,4 +1,4 @@
-# <h1 align="center"> Connect **<font color="turquoise">Ballerina</font>** Services to **<font color="orange">WSO2</font>** API Manager through **<font color="green">MySQL</font>** in **<font color="blue">Docker</font>**</h1>
+# <h1 align="center"> Connect **<span style="color:turquoise;">Ballerina</span>** Services to **<span style="color:orange;">WSO2</span>** API Manager through **<span style="color:green;">MySQL</span>** in **<font color="blue">Docker</span>**</h1>
 
 <hr/>
 
@@ -6,9 +6,9 @@
 
 ## About The Project
 
-The integration of **<font color="orange">WSO2</font>**, **<font color="turquoise">Ballerina</font>** , and  **<font color="green">MySQL</font>** using **<font color="blue">Docker</font>** provides a comprehensive solution for building, deploying, and managing applications in a scalable and containerized environment. **<font color="orange">WSO2</font>**, known for its robust middleware platform, seamlessly collaborates with **<font color="turquoise">Ballerina</font>**, a programming language designed for integration, to orchestrate and streamline the development process. Leveraging Docker containers ensures portability and simplifies the deployment of the entire solution.
-In this configuration, **<font color="orange">WSO2</font>** facilitates enterprise-level integration and API management, while **<font color="turquoise">Ballerina</font>** serves as a powerful tool for creating microservices and handling complex workflows. **<font color="green">MySQL</font>**, a reliable and widely-used relational database, complements the architecture by providing a scalable and efficient data storage solution.
-The Docker platform adds an additional layer of flexibility and efficiency to the integration stack, allowing for easy deployment and management of the interconnected components. This combination of **<font color="orange">WSO2</font>**, **<font color="turquoise">Ballerina</font>**, and **<font color="green">MySQL</font>** within a Dockerized environment empowers developers to create resilient, scalable, and easily maintainable applications, enhancing the agility and responsiveness of modern software development processes.
+The integration of **<span style="color:orange;">WSO2</span>**, **<span style="color:turquoise;">Ballerina</span>** , and  **<span style="color:green;">MySQL</span>** using **<font color="blue">Docker</span>** provides a comprehensive solution for building, deploying, and managing applications in a scalable and containerized environment. **<span style="color:orange;">WSO2</span>**, known for its robust middleware platform, seamlessly collaborates with **<span style="color:turquoise;">Ballerina</span>**, a programming language designed for integration, to orchestrate and streamline the development process. Leveraging Docker containers ensures portability and simplifies the deployment of the entire solution.
+In this configuration, **<span style="color:orange;">WSO2</span>** facilitates enterprise-level integration and API management, while **<span style="color:turquoise;">Ballerina</span>** serves as a powerful tool for creating microservices and handling complex workflows. **<span style="color:green;">MySQL</span>**, a reliable and widely-used relational database, complements the architecture by providing a scalable and efficient data storage solution.
+The Docker platform adds an additional layer of flexibility and efficiency to the integration stack, allowing for easy deployment and management of the interconnected components. This combination of **<span style="color:orange;">WSO2</span>**, **<span style="color:turquoise;">Ballerina</span>**, and **<span style="color:green;">MySQL</span>** within a Dockerized environment empowers developers to create resilient, scalable, and easily maintainable applications, enhancing the agility and responsiveness of modern software development processes.
 
   ------------------
 
@@ -131,6 +131,7 @@ The Docker platform adds an additional layer of flexibility and efficiency to th
 * Execute the file using terminal:
 ```sudo sh b2o.sh``` 
 <p></p>
+
 [![Static Badge](https://img.shields.io/badge/b2o.sh-white?logo=gnometerminal&logoColor=black)](/shared/features/Ballerina2OpenAPI/b2o.sh)
 
 
