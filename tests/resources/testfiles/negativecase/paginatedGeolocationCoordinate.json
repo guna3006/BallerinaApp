@@ -1,0 +1,8 @@
+{
+    "timestamp": "2023-12-02T03:04:48.580592Z",
+    "status": 400,
+    "reason": "Bad Request",
+    "message": "no query param value found for 'pageNumber'",
+    "path": "/paginated/coordinate?lat=51.21710155&lon=6.778318997521949&pageSize=3",
+    "method": "GET"
+}

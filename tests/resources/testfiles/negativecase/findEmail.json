@@ -1,0 +1,8 @@
+{
+    "timestamp": "2023-12-02T02:39:42.634737Z",
+    "status": 500,
+    "reason": "Internal Server Error",
+    "message": "Query did not retrieve any rows.",
+    "path": "/find/email?username=kumar",
+    "method": "GET"
+}

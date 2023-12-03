@@ -1,0 +1,8 @@
+{
+    "timestamp": "2023-12-02T02:59:17.129671Z",
+    "status": 400,
+    "reason": "Bad Request",
+    "message": "no query param value found for 'staffid'",
+    "path": "/database/email?staff_id=s004",
+    "method": "DELETE"
+}

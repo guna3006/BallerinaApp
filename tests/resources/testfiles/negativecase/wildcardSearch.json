@@ -1,0 +1,8 @@
+{
+    "timestamp": "2023-12-02T03:02:15.789924Z",
+    "status": 400,
+    "reason": "Bad Request",
+    "message": "no query param value found for 'key'",
+    "path": "/geolocation/wildcardSearch?mey=kulim",
+    "method": "GET"
+}

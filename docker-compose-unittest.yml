@@ -1,0 +1,65 @@
+version: '3.8'
+name: unit-test-server
+services:
+  mysql:
+    container_name: mysql-server
+    hostname: mysql
+    image: mysql:latest
+    volumes:
+      - type: bind
+        source: ./shared/resources/mysql/config/mysql.cnf
+        target: /etc/mysql/conf.d/my.cnf
+        read_only: true
+      - type: bind
+        source: ./shared/resources/mysql/sql
+        target: /docker-entrypoint-initdb.d
+        read_only: true
+      - type: volume
+        source: mysql-data
+        target: /var/lib/mysql
+    ports:
+      - 0.0.0.0:3306:3306
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.6
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=temp_db
+      - MYSQL_USER=system
+      - MYSQL_PASSWORD=admin123
+    healthcheck:
+      test: ["CMD", "mysqladmin" ,"ping", "-uroot", "-proot"]
+      interval: 30s
+      timeout: 60s
+      retries: 5
+      start_period: 80s
+
+  ballerina:
+    container_name: ballerina-runtime
+    hostname: ballerina
+    image: ballerina/ballerina:latest
+    working_dir: /BallerinaApp
+    volumes:
+      - ././:/BallerinaApp
+    ports:
+      - 0.0.0.0:7777:7777
+      - 0.0.0.0:7778:7778
+    networks:
+      vpcbr:
+        ipv4_address: 10.5.0.7
+    command: bal test --test-report --code-coverage
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+
+volumes:
+  mysql-data:
+
+networks:
+  vpcbr:
+    driver: bridge
+    ipam:
+     config:
+       - subnet: 10.5.0.0/16
+         gateway: 10.5.0.1

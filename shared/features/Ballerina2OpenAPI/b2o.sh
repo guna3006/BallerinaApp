@@ -1,0 +1,10 @@
+echo '--------------------------------------------'
+echo '--Ballerina Service to OpenAPI Defination---'
+echo '--------------------------------------------'
+echo ''
+echo '---> converting https bal file'
+bal openapi -i ../../../https.bal -o ./OpenAPI
+echo ''
+echo '--------------------------------------------'
+echo '------------------COMPLETED-----------------'
+echo '--------------------------------------------'

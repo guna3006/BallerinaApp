@@ -1,0 +1,56 @@
+{
+    "results": [
+        {
+            "datasource": {
+                "sourcename": "openstreetmap",
+                "attribution": "© OpenStreetMap contributors",
+                "license": "Open Database License",
+                "url": "https://www.openstreetmap.org/copyright"
+            },
+            "name": "Parkhaus Kö Talstraße",
+            "country": "Germany",
+            "country_code": "de",
+            "state": "North Rhine-Westphalia",
+            "city": "Dusseldorf",
+            "postcode": "40217",
+            "district": "Stadtbezirk 3",
+            "suburb": "Friedrichstadt",
+            "street": "Talstraße",
+            "housenumber": "1",
+            "lon": 6.778318997521949,
+            "lat": 51.21710155,
+            "distance": 0,
+            "result_type": "amenity",
+            "formatted": "Parkhaus Kö Talstraße, Talstraße 1, 40217 Dusseldorf, Germany",
+            "address_line1": "Parkhaus Kö Talstraße",
+            "address_line2": "Talstraße 1, 40217 Dusseldorf, Germany",
+            "category": "parking.cars",
+            "timezone": {
+                "name": "Europe/Berlin",
+                "offset_STD": "+01:00",
+                "offset_STD_seconds": 3600,
+                "offset_DST": "+02:00",
+                "offset_DST_seconds": 7200,
+                "abbreviation_STD": "CET",
+                "abbreviation_DST": "CEST"
+            },
+            "plus_code": "9F386Q8H+R8",
+            "rank": {
+                "importance": 0.00000999999999995449,
+                "popularity": 8.995467104553104
+            },
+            "place_id": "515fd9c0a7ff1c1b40599994ccfbc99b4940f00102f9010877d00800000000c002019203175061726b68617573204bc3b62054616c73747261c39f65",
+            "bbox": {
+                "lon1": 6.7778088,
+                "lat1": 51.2169076,
+                "lon2": 6.7786914,
+                "lat2": 51.2173398
+            }
+        }
+    ],
+    "query": {
+        "lat": 51.21710155,
+        "lon": 6.778318997521949,
+        "plus_code": "9F386Q8H+R8"
+    }
+}

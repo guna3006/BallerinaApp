@@ -1,0 +1,73 @@
+[BallerinaApp.functions]
+#https://api.geoapify.com
+GEO_API_URL = "https://api.geoapify.com/v1/geocode"
+GEO_API_KEY = "43cbd49db75f47119044748d0afeb15b"
+GEO_URI_REVERSE = "/reverse?"
+GEO_URI_SEARCH = "/search?"
+API_FORMAT = "json"
+#Error Message
+INVALID_INT_MSG = "INVALID INT"
+INVALID_STRING_MSG = "INVALID STRING"
+
+[BallerinaApp.configurations]
+#DatabaseInfomation
+USER = "system"
+PASSWORD = "admin123"
+HOST = "10.5.0.6"
+PORT = 3306
+DATABASE = "temp_db"
+CONNECTION_POOL = 5
+
+#Http Listener
+CERT_FILE = "shared/resources/keys/serverpubliccert.crt"
+KEY_FILE = "shared/resources/keys/serverpvtkey.key"
+HTTP_PORT = 7777
+HTTPS_PORT = 7778
+
+[BallerinaApp]
+#Positive Scenarios
+TEST_CLIENT = "http://localhost:7777"
+geolocationCoordinateURI = "/geolocation/coordinate?lat=51.21710155&lon=6.778318997521949"
+geolocationCoordinateFILE = "tests/resources/testfiles/positivecase/geolocationCoordinate.json"
+wildcardSearchURI = "/geolocation/wildcardSearch?key=kulim"
+wildcardSearchFILE = "tests/resources/testfiles/positivecase/wildcardSearch.json"
+paginatedWildcardSearchURI = "/paginated/wildcardSearch?key=kulim&pageNumber=1&pageSize=3"
+paginatedWildcardSearchFILE = "tests/resources/testfiles/positivecase/paginatedWildcardSearch.json"
+paginatedGeolocationCoordinateURI = "/paginated/coordinate?lat=51.21710155&lon=6.778318997521949&pageNumber=1&pageSize=3"
+paginatedGeolocationCoordinateFILE = "tests/resources/testfiles/positivecase/geolocationCoordinate.json"
+findEmailURI =  "/find/email?username=guna"
+findEmailFILE = "tests/resources/testfiles/positivecase/findEmail.json"
+databaseEmailStaffidURI = "/database/email/s003"
+databaseEmailStaffidFILE = "tests/resources/testfiles/positivecase/databaseEmailStaffid.json"
+databaseNewdataURI = "/database/newdata"
+databaseNewdataReqFILE = "tests/resources/testfiles/positivecase/databaseNewdataRequest.json"
+databaseNewdataResFILE = "tests/resources/testfiles/positivecase/databaseNewdataResponse.json"
+databaseGetEmailListFILE = "tests/resources/testfiles/positivecase/databaseGetEmailList.json"
+databaseGetEmailListURI = "/database/emaillist"
+databaseDeleteFILE = "tests/resources/testfiles/positivecase/databaseDelete.json"
+databaseDeleteURI = "/database/email?staffid=s007"
+databaseGetUserListFILE = "tests/resources/testfiles/positivecase/databaseGetUserList.json"
+databaseGetUserListURI = "/database/usernamelist"
+
+#Negative scenarios
+NgeolocationCoordinateURI = "/geolocation/coordinate?lat=51.21710155&"
+NgeolocationCoordinateFILE = "tests/resources/testfiles/negativecase/geolocationCoordinate.json"
+NwildcardSearchURI = "/geolocation/wildcardSearch?mey=kulim"
+NwildcardSearchFILE = "tests/resources/testfiles/negativecase/wildcardSearch.json"
+NpaginatedWildcardSearchURI = "/paginated/wildcardSearch?key=kulim&pageNumber=1"
+NpaginatedWildcardSearchFILE = "tests/resources/testfiles/negativecase/paginatedWildcardSearch.json"
+NpaginatedGeolocationCoordinateURI = "/paginated/coordinate?lat=51.21710155&lon=6.778318997521949&pageSize=3"
+NpaginatedGeolocationCoordinateFILE = "tests/resources/testfiles/negativecase/geolocationCoordinate.json"
+NfindEmailURI =  "/find/email?username=kumar"
+NfindEmailFILE = "tests/resources/testfiles/negativecase/findEmail.json"
+NdatabaseEmailStaffidURI = "/database/email/x001"
+NdatabaseEmailStaffidFILE = "tests/resources/testfiles/negativecase/databaseEmailStaffid.json"
+NdatabaseNewdataURI = "/database/newdata"
+NdatabaseNewdataReqFILE = "tests/resources/testfiles/negativecase/databaseNewdataRequest.json"
+NdatabaseNewdataResFILE = "tests/resources/testfiles/negativecase/databaseNewdataResponse.json"
+NdatabaseGetEmailListFILE = "tests/resources/testfiles/negativecase/databaseGetEmailList.json"
+NdatabaseGetEmailListURI = "/database/emaillists"
+NdatabaseDeleteFILE = "tests/resources/testfiles/negativecase/databaseDelete.json"
+NdatabaseDeleteURI = "/database/email?staff_id=s004"
+NdatabaseGetUserListFILE = "tests/resources/testfiles/negativecase/databaseGetUserList.json"
+NdatabaseGetUserListURI = "/database/usernamelists"

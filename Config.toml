@@ -1,0 +1,25 @@
+[BallerinaApp.functions]
+#https://api.geoapify.com
+GEO_API_URL = "https://api.geoapify.com/v1/geocode"
+GEO_API_KEY = "43cbd49db75f47119044748d0afeb15b"
+GEO_URI_REVERSE = "/reverse?"
+GEO_URI_SEARCH = "/search?"
+API_FORMAT = "json"
+#Error Message
+INVALID_INT_MSG = "INVALID INT"
+INVALID_STRING_MSG = "INVALID STRING"
+
+[BallerinaApp.configurations]
+#DatabaseInfomation
+USER = "system"
+PASSWORD = "admin123"
+HOST = "10.5.0.6"
+PORT = 3306
+DATABASE = "temp_db"
+CONNECTION_POOL = 5
+
+#Http Listener
+CERT_FILE = "shared/resources/keys/serverpubliccert.crt"
+KEY_FILE = "shared/resources/keys/serverpvtkey.key"
+HTTP_PORT = 7777
+HTTPS_PORT = 7778

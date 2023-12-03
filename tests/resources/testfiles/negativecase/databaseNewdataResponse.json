@@ -1,0 +1,8 @@
+{
+    "timestamp": "2023-12-02T03:54:48.528635Z",
+    "status": 500,
+    "reason": "Internal Server Error",
+    "message": "{ballerina/lang.value}ConversionError",
+    "path": "/database/newdata",
+    "method": "POST"
+}

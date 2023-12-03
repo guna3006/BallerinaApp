@@ -1,0 +1,8 @@
+{
+    "timestamp": "2023-12-02T02:57:44.044342Z",
+    "status": 404,
+    "reason": "Not Found",
+    "message": "no matching resource found for path",
+    "path": "/database/emaillists",
+    "method": "GET"
+}

@@ -1,0 +1,8 @@
+{
+    "timestamp": "2023-12-02T03:05:45.821764Z",
+    "status": 400,
+    "reason": "Bad Request",
+    "message": "no query param value found for 'pageSize'",
+    "path": "/paginated/wildcardSearch?key=kulim&pageNumber=1",
+    "method": "GET"
+}

@@ -1,0 +1,8 @@
+{
+    "timestamp": "2023-12-02T02:55:53.009501Z",
+    "status": 404,
+    "reason": "Not Found",
+    "message": "no matching resource found for path",
+    "path": "/database/usernamelists",
+    "method": "GET"
+}

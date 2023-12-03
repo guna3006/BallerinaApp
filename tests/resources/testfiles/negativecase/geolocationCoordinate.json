@@ -1,0 +1,8 @@
+{
+    "timestamp": "2023-12-02T03:01:28.325311Z",
+    "status": 400,
+    "reason": "Bad Request",
+    "message": "no query param value found for 'lon'",
+    "path": "/geolocation/coordinate?lat=51.21710155&",
+    "method": "GET"
+}

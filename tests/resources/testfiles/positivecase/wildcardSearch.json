@@ -1,0 +1,197 @@
+{
+    "results": [
+        {
+            "datasource": {
+                "sourcename": "openstreetmap",
+                "attribution": "© OpenStreetMap contributors",
+                "license": "Open Database License",
+                "url": "https://www.openstreetmap.org/copyright"
+            },
+            "name": "Kulim",
+            "country": "Malaysia",
+            "country_code": "my",
+            "state": "Kedah",
+            "city": "Kulim",
+            "postcode": "09000",
+            "district": "Kulim",
+            "lon": 100.5525705,
+            "lat": 5.3663769,
+            "formatted": "Kulim, Kedah, Malaysia",
+            "address_line1": "Kulim",
+            "address_line2": "Kulim, Kedah, Malaysia",
+            "category": "populated_place",
+            "timezone": {
+                "name": "Asia/Kuala_Lumpur",
+                "name_alt": "Asia/Singapore",
+                "offset_STD": "+08:00",
+                "offset_STD_seconds": 28800,
+                "offset_DST": "+08:00",
+                "offset_DST_seconds": 28800
+            },
+            "plus_code": "6PQ29H83+H2",
+            "plus_code_short": "83+H2 Kulim, Kedah, Malaysia",
+            "result_type": "district",
+            "rank": {
+                "importance": 0.5888683861101411,
+                "popularity": 1.2062454469551849,
+                "confidence": 1,
+                "confidence_city_level": 1,
+                "match_type": "full_match"
+            },
+            "place_id": "51008fa8505d23594059190a8e812b771540f00103f901ba39ab2600000000c002069203054b756c696d",
+            "bbox": {
+                "lon1": 100.3925705,
+                "lat1": 5.2063769,
+                "lon2": 100.7125705,
+                "lat2": 5.5263769
+            }
+        },
+        {
+            "datasource": {
+                "sourcename": "openstreetmap",
+                "attribution": "© OpenStreetMap contributors",
+                "license": "Open Database License",
+                "url": "https://www.openstreetmap.org/copyright"
+            },
+            "name": "Kulim",
+            "country": "Indonesia",
+            "country_code": "id",
+            "region": "Sumatra",
+            "state": "Riau",
+            "county": "Kampar Regency",
+            "city": "Kulim",
+            "village": "Kulim",
+            "lon": 101.5706665,
+            "lat": 0.441126,
+            "formatted": "Kulim, Kampar Regency, Indonesia",
+            "address_line1": "Kulim",
+            "address_line2": "Kampar Regency, Indonesia",
+            "category": "populated_place",
+            "timezone": {
+                "name": "Asia/Jakarta",
+                "offset_STD": "+07:00",
+                "offset_STD_seconds": 25200,
+                "offset_DST": "+07:00",
+                "offset_DST_seconds": 25200,
+                "abbreviation_STD": "WIB",
+                "abbreviation_DST": "WIB"
+            },
+            "plus_code": "6PG3CHRC+F7",
+            "result_type": "city",
+            "rank": {
+                "importance": 0.37500999999999995,
+                "popularity": 0.8867975611397146,
+                "confidence": 1,
+                "confidence_city_level": 1,
+                "match_type": "full_match"
+            },
+            "place_id": "510f9bc8cc85645940593694da8b683bdc3ff00103f90158cbfa4d00000000c002089203054b756c696d",
+            "bbox": {
+                "lon1": 101.5506665,
+                "lat1": 0.421126,
+                "lon2": 101.5906665,
+                "lat2": 0.461126
+            }
+        },
+        {
+            "datasource": {
+                "sourcename": "openstreetmap",
+                "attribution": "© OpenStreetMap contributors",
+                "license": "Open Database License",
+                "url": "https://www.openstreetmap.org/copyright"
+            },
+            "name": "Kulim (Malaysia) Berhad Ladang REM",
+            "country": "Malaysia",
+            "country_code": "my",
+            "state": "Johor",
+            "city": "Kulim (Malaysia) Berhad Ladang REM",
+            "district": "Kota Tinggi",
+            "hamlet": "Kulim (Malaysia) Berhad Ladang REM",
+            "lon": 103.8838239,
+            "lat": 1.7033396,
+            "formatted": "Kota Tinggi, Kulim (Malaysia) Berhad Ladang REM, Johor, Malaysia",
+            "address_line1": "Kota Tinggi",
+            "address_line2": "Kulim (Malaysia) Berhad Ladang REM, Johor, Malaysia",
+            "category": "populated_place",
+            "timezone": {
+                "name": "Asia/Kuala_Lumpur",
+                "name_alt": "Asia/Singapore",
+                "offset_STD": "+08:00",
+                "offset_STD_seconds": 28800,
+                "offset_DST": "+08:00",
+                "offset_DST_seconds": 28800
+            },
+            "plus_code": "6PH5PV3M+8G",
+            "result_type": "suburb",
+            "rank": {
+                "importance": 0.35000999999999993,
+                "popularity": 1.8858659875926385,
+                "confidence": 1,
+                "confidence_city_level": 1,
+                "match_type": "full_match"
+            },
+            "place_id": "51157b1e9290f859405922b53f06e140fb3ff00103f90124747c7d02000000c002059203224b756c696d20284d616c61797369612920426572686164204c6164616e672052454d",
+            "bbox": {
+                "lon1": 103.8638239,
+                "lat1": 1.6833396,
+                "lon2": 103.9038239,
+                "lat2": 1.7233396
+            }
+        },
+        {
+            "datasource": {
+                "sourcename": "openstreetmap",
+                "attribution": "© OpenStreetMap contributors",
+                "license": "Open Database License",
+                "url": "https://www.openstreetmap.org/copyright"
+            },
+            "name": "Мошъюга",
+            "country": "Russia",
+            "country_code": "ru",
+            "region": "Northwestern Federal District",
+            "state": "Komi Republic",
+            "county": "Izhemsky District",
+            "city": "Мошъюга",
+            "municipality": "сельское поселение Мохча",
+            "village": "Мошъюга",
+            "lon": 53.750358,
+            "lat": 64.8564597,
+            "formatted": "Мошъюга, Izhemsky District, Russia",
+            "address_line1": "Мошъюга",
+            "address_line2": "Izhemsky District, Russia",
+            "category": "populated_place",
+            "timezone": {
+                "name": "Europe/Moscow",
+                "offset_STD": "+03:00",
+                "offset_STD_seconds": 10800,
+                "offset_DST": "+03:00",
+                "offset_DST_seconds": 10800,
+                "abbreviation_STD": "MSK",
+                "abbreviation_DST": "MSK"
+            },
+            "plus_code": "9HPMVQ42+H4",
+            "result_type": "city",
+            "rank": {
+                "importance": 0.27501,
+                "popularity": 0.44868481920401015,
+                "confidence": 1,
+                "confidence_city_level": 1,
+                "match_type": "full_match"
+            },
+            "place_id": "515f251fbb0be04a4059e375583cd0365040f00102f9013940db1900000000c0020892030ed09cd0bed188d18ad18ed0b3d0b0",
+            "bbox": {
+                "lon1": 53.7350909,
+                "lat1": 64.8462284,
+                "lon2": 53.7639729,
+                "lat2": 64.8694758
+            }
+        }
+    ],
+    "query": {
+        "text": "kulim",
+        "parsed": {
+            "city": "kulim",
+            "expected_type": "unknown"
+        }
+    }
+}
